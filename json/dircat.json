@@ -1,0 +1,114 @@
+[
+    {
+        "catId": "cat000",
+        "catName": "Others"
+    },
+    {
+        "catId": "cat001",
+        "catName": "Wellness Coaching"
+    },
+    {
+        "catId": "cat002",
+        "catName": "Rheumatology"
+    },
+    {
+        "catId": "cat003",
+        "catName": "Pediatrics"
+    },
+    {
+        "catId": "cat004",
+        "catName": "Oncology"
+    },
+    {
+        "catId": "cat005",
+        "catName": "Nephrology"
+    },
+    {
+        "catId": "cat006",
+        "catName": "Internal Medicine"
+    },
+    {
+        "catId": "cat007",
+        "catName": "Gastroenterology"
+    },
+    {
+        "catId": "cat008",
+        "catName": "Ears, Nose, Throat (Otolaryngology)"
+    },
+    {
+        "catId": "cat009",
+        "catName": "Cardiology"
+    },
+    {
+        "catId": "cat0010",
+        "catName": "Vascular Surgery"
+    },
+    {
+        "catId": "cat0011",
+        "catName": "Rehabilitation Medicine"
+    },
+    {
+        "catId": "cat0012",
+        "catName": "Orthopedic Surgery"
+    },
+    {
+        "catId": "cat0013",
+        "catName": "Obstetrics and Gynecology"
+    },
+    {
+        "catId": "cat0014",
+        "catName": "Neck Surgery"
+    },
+    {
+        "catId": "cat0015",
+        "catName": "General Surgery"
+    },
+    {
+        "catId": "cat0016",
+        "catName": "Family Medicine"
+    },
+    {
+        "catId": "cat0017",
+        "catName": "Dermatology"
+    },
+    {
+        "catId": "cat0018",
+        "catName": "Urology"
+    },
+    {
+        "catId": "cat0019",
+        "catName": "Pulmonology"
+    },
+    {
+        "catId": "cat0020",
+        "catName": "Ophthalmology"
+    },
+    {
+        "catId": "cat0021",
+        "catName": "Nutritionist-Dietitian"
+    },
+    {
+        "catId": "cat0022",
+        "catName": "Mental Health"
+    },
+    {
+        "catId": "cat0023",
+        "catName": "General Medicine"
+    },
+    {
+        "catId": "cat0024",
+        "catName": "Endocrinology"
+    },
+    {
+        "catId": "cat0025",
+        "catName": "Dental"
+    },
+    {
+        "catId": "cat0026",
+        "catName": "Geriatric Medicine"
+    },
+    {
+        "catId": "cat0027",
+        "catName": "Occupational Medicine"
+    }
+]

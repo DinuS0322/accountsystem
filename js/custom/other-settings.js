@@ -1,0 +1,209 @@
+$(document).ready(function(){
+
+    $("#chargeTable").DataTable({
+        responsive: true,
+        dom: 'Bfrtip',
+        buttons: [
+            { extend: 'excel', text: 'Excel', className: 'btn-custom', buttonWidth: '100px',
+               exportOptions: {
+              columns:[0,1]
+          }, },
+            { extend: 'pdf', text: 'PDF', className: 'btn-custom', buttonWidth: '100px'  ,
+            exportOptions: {
+              columns:[0,1]
+          },
+          customize: function (doc) {
+            doc.defaultStyle.fontSize = 10; 
+            doc.styles.tableHeader.fontSize = 10; 
+            doc.styles.tableHeader.alignment = 'left'; 
+            doc.pageSize = 'A4'; 
+            doc.content[1].table.widths = '*';
+        } 
+        }
+        ]
+    });
+
+    $("#loanPurpose").DataTable({
+        responsive: true,
+        dom: 'Bfrtip',
+        buttons: [
+            { extend: 'excel', text: 'Excel', className: 'btn-custom', buttonWidth: '100px',
+               exportOptions: {
+              columns:[0,1]
+          }, },
+            { extend: 'pdf', text: 'PDF', className: 'btn-custom', buttonWidth: '100px'  ,
+            exportOptions: {
+              columns:[0,1]
+          },
+          customize: function (doc) {
+            doc.defaultStyle.fontSize = 10; 
+            doc.styles.tableHeader.fontSize = 10; 
+            doc.styles.tableHeader.alignment = 'left'; 
+            doc.pageSize = 'A4'; 
+            doc.content[1].table.widths = '*';
+        } 
+        }
+        ]
+    });
+})
+
+$('body').on('click', '#btnAddChargetype', function(){
+    var formData = new FormData();
+
+    //CSRF Protection
+    var CSRF_TOKEN = $("#CSRF_TOKEN").val();
+    formData.append("CSRF_TOKEN", CSRF_TOKEN);
+    //CSRF Protection
+
+    var txtChargeType = $("#txtChargeType").val();
+    formData.append("txtChargeType", txtChargeType);
+
+    if (txtChargeType == "") {
+        $("#txtChargeType").focus();
+        $.alert({
+            title: "Alert!",
+            content: "Please enter charge Type",
+            icon: "fa fa-exclamation-triangle",
+            type: "red",
+            theme: "modern",
+            buttons: {
+                okay: {
+                    text: "Okay",
+                    btnClass: "btn-red",
+                },
+            },
+        });
+        return false;
+    }
+
+    $.ajax({
+        url: "ajax/subpage/create-charge-controller.php",
+        type: "POST",
+        cache: false,
+        processData: false,
+        contentType: false,
+        data: formData,
+        beforeSend: function () {
+            $("#mainloader").show();
+        },
+        success: function (data) {
+            if (data == 'success') {
+                $.alert({
+                    title: "Success!",
+                    content: "Create Charge Type successfully",
+                    icon: "fa fa-check-circle",
+                    type: "green",
+                    theme: "modern",
+                    buttons: {
+                        Okay: function () {
+                            location.reload();
+                        },
+                    },
+                });
+            } 
+            else {
+                $.alert({
+                    title: "Alert!",
+                    content: data,
+                    icon: "fa fa-exclamation-triangle",
+                    type: "red",
+                    theme: "modern",
+                    buttons: {
+                        okay: {
+                            text: "Okay",
+                            btnClass: "btn-red",
+                        },
+                    },
+                });
+            }
+            $("#mainloader").hide();
+
+        },
+        error: function (data) {
+            console.log(data);
+            $("#mainloader").hide();
+            ajaxError(data);
+        },
+    });
+})
+
+
+$('body').on('click', '#btnAddPurpose', function () {
+    var formData = new FormData();
+
+    //CSRF Protection
+    var CSRF_TOKEN = $("#CSRF_TOKEN").val();
+    formData.append("CSRF_TOKEN", CSRF_TOKEN);
+    //CSRF Protection
+
+    var txtPurpose = $("#txtPurpose").val();
+    formData.append("txtPurpose", txtPurpose);
+
+    if (txtPurpose == "") {
+        $("#txtPurpose").focus();
+        $.alert({
+            title: "Alert!",
+            content: "Please enter purpose",
+            icon: "fa fa-exclamation-triangle",
+            type: "red",
+            theme: "modern",
+            buttons: {
+                okay: {
+                    text: "Okay",
+                    btnClass: "btn-red",
+                },
+            },
+        });
+        return false;
+    }
+
+    $.ajax({
+        url: "ajax/subpage/create-purpose-controller.php",
+        type: "POST",
+        cache: false,
+        processData: false,
+        contentType: false,
+        data: formData,
+        beforeSend: function () {
+            $("#mainloader").show();
+        },
+        success: function (data) {
+            if (data == 'success') {
+                $.alert({
+                    title: "Success!",
+                    content: "Create loan purpose successfully",
+                    icon: "fa fa-check-circle",
+                    type: "green",
+                    theme: "modern",
+                    buttons: {
+                        Okay: function () {
+                            location.reload();
+                        },
+                    },
+                });
+            }
+            else {
+                $.alert({
+                    title: "Alert!",
+                    content: data,
+                    icon: "fa fa-exclamation-triangle",
+                    type: "red",
+                    theme: "modern",
+                    buttons: {
+                        okay: {
+                            text: "Okay",
+                            btnClass: "btn-red",
+                        },
+                    },
+                });
+            }
+            $("#mainloader").hide();
+
+        },
+        error: function (data) {
+            console.log(data);
+            $("#mainloader").hide();
+            ajaxError(data);
+        },
+    });
+})

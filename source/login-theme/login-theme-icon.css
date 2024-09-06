@@ -1,0 +1,483 @@
+/* fallback */
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v139/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2)
+    format("woff2");
+}
+/* fallback */
+@font-face {
+  font-family: "Material Icons Outlined";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialiconsoutlined/v108/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.woff2)
+    format("woff2");
+}
+/* fallback */
+@font-face {
+  font-family: "Material Icons Round";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialiconsround/v107/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2)
+    format("woff2");
+}
+/* fallback */
+@font-face {
+  font-family: "Material Icons Sharp";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialiconssharp/v108/oPWQ_lt5nv4pWNJpghLP75WiFR4kLh3kvmvR.woff2)
+    format("woff2");
+}
+/* fallback */
+@font-face {
+  font-family: "Material Icons Two Tone";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialiconstwotone/v111/hESh6WRmNCxEqUmNyh3JDeGxjVVyMg4tHGctNCu0.woff2)
+    format("woff2");
+}
+body {
+  --google-font-color-materialiconstwotone: none;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-icons-outlined {
+  font-family: "Material Icons Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-icons-round {
+  font-family: "Material Icons Round";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-icons-sharp {
+  font-family: "Material Icons Sharp";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-icons-two-tone {
+  font-family: "Material Icons Two Tone";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+/* SEARCH CSS */
+.business-info .material-icons {
+  color: #4fbab9 !important;
+}
+.gbsld-banner-search {
+  background-color: #3c7db5;
+}
+.gbsld-search-filter-wrap select,
+.gbsld-search-filter-wrap select option,
+.gbsld-search-filter-wrap input {
+  color: #000000 !important;
+  margin: 10px 5px;
+}
+.gbsld-search-filter-wrap button {
+  margin: 10px 5px;
+}
+.gbsld-search-filter-wrap .gbsld-banner-search {
+  height: 44px;
+  padding: 0 30px;
+}
+.gbsld-search-filter-wrap form {
+  display: table;
+  margin: auto;
+}
+
+/* CUSTOM CSS */
+.gbsld-col-wrap {
+  display: inline-block;
+}
+/*.gbsld-logo-wrap .gbsld-col-wrap:last-child {
+    width: 77%;
+}
+.gbsld-logo-wrap .gbsld-col-wrap:first-child {
+    width: 21%;
+}*/
+.gbsld-listing-status .alert {
+  font-weight: 700;
+  font-size: 17px;
+}
+.single-gbsld-listings .row {
+  position: relative;
+}
+.single-gbsld-listings .gbsld-logo-wrap {
+  margin-bottom: 16px;
+}
+.single-gbsld-listings .gbsls-logo img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  margin-top: -100px;
+  right: 20px;
+  border: 5px solid #fff;
+  box-shadow: 0 0.15rem 1.75rem 0 rgb(58 59 69 / 15%);
+  background-color: #ffffff;
+}
+.single-gbsld-listings .site-content .ast-container {
+  display: block;
+}
+.gbsld-featured-bg-image {
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+}
+/* .gbsld-featured-bg-image:before {
+    content: '';
+    background-color: rgba(33,30,27,0.55);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+} */
+.gbsld-featured-bg-image .page-heading {
+  max-width: 1240px;
+  margin: 0 auto !important;
+  position: relative;
+  padding: 116px 10px;
+}
+.gbsld-featured-bg-image {
+  position: relative;
+}
+.page-heading span,
+.gbsld-featured-bg-image .container-fluid h1,
+.gbsld-featured-bg-image .material-icons.align-middle {
+  color: #29436c !important;
+}
+.site-below-footer-wrap {
+  padding: 0 !important;
+}
+.site-below-footer-wrap {
+  min-height: 56px !important;
+}
+.site-below-footer-wrap a,
+.ast-footer-copyright p {
+  text-decoration: none;
+}
+.gallery-image-wrapper-main img {
+  height: 100%;
+  max-height: 380px;
+  margin: 0 auto;
+}
+.gbld-img-slider,
+.gbld-related-listing {
+  position: relative;
+}
+.gbld-img-slider .slick-arrow,
+.gbld-related-listing .slick-arrow {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  z-index: 99;
+  cursor: pointer;
+}
+.gbsld-slick-prev.slick-arrow {
+  text-align: left;
+}
+.gbsld-slick-next.slick-arrow {
+  text-align: right;
+}
+.gbsld-title-wrap:before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #4fbab9;
+  position: absolute;
+  right: 0;
+  top: 14px;
+  z-index: -1;
+}
+.gbsld-title-wrap {
+  position: relative;
+  padding: 0 10px;
+}
+.gbsld-title-wrap span {
+  background-color: #ffffff;
+  padding: 0 5px;
+  margin: 0 12px;
+}
+.gbls-image {
+  height: 250px;
+}
+.letter-filter a {
+  background-color: #3c7db5;
+  color: #ffffff !important;
+  border-color: #3c7db5;
+  display: inline-block;
+  border: 1px solid #3c7db5;
+  margin: 3px;
+  width: 28px;
+}
+.letter-filter {
+  text-align: center;
+}
+.letter-filter .active-letter {
+  background: #fff;
+  color: #3c7db5 !important;
+}
+.locations-main-wrap .locations-image {
+  height: 309px;
+  vertical-align: ta;
+  display: table;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.locations-main-wrap .locations-colg {
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+}
+.locations-content h4,
+.locations-content {
+  color: #ffffff;
+}
+.locations-image:before {
+  content: "";
+  position: relative;
+  background-color: #11111157;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.business-info {
+  font-size: 14px;
+}
+.locations-main-wrap a {
+  text-decoration: none !important;
+}
+.drawer-footer .material-icons.leading-icon.icon-sm {
+  color: #5083bc;
+}
+.gbsld-tax-cont {
+  overflow: auto;
+  height: 250px;
+}
+/* COLUMN GENERATOR CSS */
+.gbsld-column {
+  margin-bottom: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.gbsld-column .col-group {
+  background-color: #f3f3f3;
+  padding: 10px;
+  display: block;
+}
+@media only screen and (max-width: 820px) {
+  .gbsld-filter-listing-main {
+    max-width: 450px;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 820px) {
+  .gbsld-column-wrap {
+    max-width: calc(100% + 20px);
+    margin: 0 -10px;
+    overflow: hidden;
+  }
+  .gbsld-column {
+    padding: 0 10px;
+    float: left;
+  }
+  .gbsld-column-wrap .one-half {
+    width: 50%;
+  }
+  .gbsld-column-wrap .one-third {
+    width: 33.33%;
+  }
+  .gbsld-column-wrap .one-fourth {
+    width: 25%;
+  }
+  .gbsld-column-wrap .one-fifth {
+    width: 20%;
+  }
+  .gbsld-column-wrap .one-sixth {
+    width: 16.66%;
+  }
+  .gbsld-column-wrap .two-thirds {
+    width: 66.66%;
+  }
+  .gbsld-column-wrap .two-fourths {
+    width: 50%;
+  }
+  .gbsld-column-wrap .three-fourths {
+    width: 75%;
+  }
+  .gbsld-column-wrap .two-fifths {
+    width: 40%;
+  }
+  .gbsld-column-wrap .three-fifths {
+    width: 60%;
+  }
+  .gbsld-column-wrap .four-fifths {
+    width: 80%;
+  }
+  .gbsld-column-wrap .two-sixths {
+    width: 33.33%;
+  }
+  .gbsld-column-wrap .three-sixths {
+    width: 50%;
+  }
+  .gbsld-column-wrap .four-sixths {
+    width: 66.66%;
+  }
+  .gbsld-column-wrap .five-sixths {
+    width: 83.33%;
+  }
+}
+
+/* CATEGORY SHORTCODE CSS */
+.gbsld-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -0.75rem;
+  margin-left: -0.75rem;
+}
+@media (min-width: 992px) {
+  .gbsld-items {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+}
+@media (min-width: 576px) {
+  .gbsld-items {
+    flex: 0 0 50%;
+    max-width: 33%;
+  }
+}
+.gbsld-items {
+  margin-bottom: 11px;
+  position: relative;
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
+.gbsld-icon {
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+  font-size: 16px;
+  padding: 8px;
+  text-align: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.gbsld-row .material-icons {
+  font-size: 17px;
+}
+.gbsld-row .gbsld-entity-permalink {
+  margin-left: 0.3em;
+  color: #b3061b !important;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: unset !important;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 600px) {
+  .gbsld-search-filter-wrap select,
+  .gbsld-search-filter-wrap .gbsld-banner-search,
+  .gbsld-search-filter-wrap .restaurant-name {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /*    .gbsld-logo-wrap .gbsld-col-wrap:last-child {
+        width: 44%;
+    }
+    .gbsld-logo-wrap .gbsld-col-wrap:first-child {
+        width: 54%;
+    }*/
+}
+@media only screen and (max-width: 576px) {
+  .business-info.col-md-9 {
+    max-width: 400px;
+    margin: 0 auto 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 10%);
+    border: solid 1px #eeeeee;
+  }
+  .business-info .col-sm-7 {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 600px) and (max-width: 800px) {
+  /*    .gbsld-logo-wrap .gbsld-col-wrap:first-child {
+        width: 28%;
+    }
+    .gbsld-logo-wrap .gbsld-col-wrap:last-child {
+        width: 69%;
+    }*/
+}
